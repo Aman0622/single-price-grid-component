@@ -1,0 +1,203 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  background-color: hsl(204, 43%, 93%);
+}
+
+#maindiv {
+  width: 45%;
+  height: 450px;
+  margin: 0 auto;
+  margin-top: 6em;
+  background-color: white;
+  border-radius: 10px;
+}
+
+#contaner {
+  padding: 2em;
+  line-height: 2em;
+}
+
+#flex {
+  display: flex;
+}
+
+#month {
+  padding: 2em;
+
+  width: 50%;
+  height: 247px;
+  background-color: hsl(179, 62%, 43%);
+  color: white;
+  border-bottom-left-radius: 10px;
+}
+
+#whyus {
+  width: 50%;
+  padding: 1.5em;
+  background-color: hsl(179, 78%, 48%);
+  color: hsl(204, 43%, 93%);
+  border-bottom-right-radius: 10px;
+  height: 247px;
+}
+
+button {
+  background-color: hsl(71, 73%, 54%);
+  color: white;
+  width: 85%;
+  height: 40px;
+  margin-top: 2em;
+  border-style: none;
+  border-radius: 5px;
+}
+
+#contaner > h2 {
+  color: hsl(179, 62%, 43%);
+}
+
+#green {
+  color: hsl(71, 73%, 54%);
+  margin-top: 0.5em;
+  font-size: 18px;
+}
+
+#dollar {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+span {
+  font-size: 17px;
+  font-weight: 400;
+  color: hsl(179, 82%, 51%);
+}
+
+#whyus > h2 {
+  font-size: 20px;
+  margin-bottom: 0.5em;
+}
+#whyus > p {
+  font-size: 15px;
+}
+@media screen and (max-width: 1332px) {
+  #maindiv {
+    width: 60%;
+    margin: 2rem auto;
+  }
+}
+
+@media screen and (max-width: 872px) {
+  #maindiv {
+    width: 80%;
+    margin: 2rem auto;
+  }
+}
+@media screen and (max-width: 650px) {
+  #maindiv {
+    width: 90%;
+    margin: 2rem auto;
+  }
+}
+@media screen and (max-width: 650px) {
+  #maindiv {
+    width: 98%;
+    margin: 2rem auto;
+  }
+}
+@media screen and (max-width: 527px) {
+  #maindiv {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+  }
+  #flex {
+    display: flex;
+    flex-direction: column;
+  }
+  #month {
+    width: 100%;
+    border-bottom-left-radius: 0px;
+  }
+  #whyus {
+    width: 100%;
+    margin-bottom: 2rem;
+    border-bottom-left-radius: 10px;
+  }
+}
+@media screen and (max-width: 431px) {
+  #maindiv {
+    width: 90%;
+  }
+}
